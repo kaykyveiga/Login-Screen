@@ -12,7 +12,7 @@ body {
     margin-top: 40px;
 }
 
-.singIn {
+.signIn {
     background: #ff0000;
     height: 100%;
     display: flex;
@@ -23,18 +23,18 @@ body {
     border-bottom-left-radius: 10px;
 }
 
-.singIn>h1 {
+.signIn > h1 {
     color: #ffffff;
     font-weight: bolder;
 }
 
-.singIn>p {
+.signIn > p {
     color: #ffffff;
     letter-spacing: 1.1px;
     text-align: center;
 }
 
-.buttonSingIn {
+.buttonSignIn {
     background: #ff0000;
     color: #ffffff;
     text-transform: uppercase;
@@ -44,7 +44,7 @@ body {
     border: 1px solid #ffffff;
 }
 
-.buttonSingIn:hover {
+.buttonSignIn:hover {
     background: #cb0202;
     cursor: pointer;
 }
@@ -60,14 +60,14 @@ body {
     margin: 30px;
 }
 
-.createAccount>h1 {
+.createAccount > h1 {
     font-weight: 800;
     margin-top: 100px;
     font-size: 32px;
     text-shadow: 1px 1px 1.1px;
 }
 
-.createAccount>ul>li {
+.createAccount > ul > li {
     display: inline;
     text-align: center;
     list-style-type: none;
@@ -93,7 +93,7 @@ body {
 }
 
 
-.createAccount>p {
+.createAccount > p {
     color: #4f4343;
     letter-spacing: 1.2px;
 }
@@ -111,7 +111,7 @@ body {
     border-radius: 5px;
 }
 
-.buttonSingUp {
+.buttonSignUp {
     background: #ff0000;
     color: #ffffff;
     text-transform: uppercase;
@@ -123,34 +123,57 @@ body {
     border: 1px solid #ffffff;
 }
 
-.buttonSingUp:hover {
+.buttonSignUp:hover {
     background: #ffffff;
     color: #ff0000;
     border: 2px solid #00000072;
     cursor: pointer;
 }
 
+
 /*adaptation for mobile */
+
 @media screen and (max-width: 710px) {
     .conteiner {
         grid-template-columns: 1fr;
+        width: 90%;
+        height: 100%;
     }
 
-    .singIn {
+    .signIn {
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
     }
 
-    .buttonSingIn {
+    .signIn > h1{
+        margin-top: 40px;
+    }
+
+    .buttonSignIn {
+        margin-bottom: 30px;
+    }
+
+    .createAccount > h1 {
+        margin-top: 50px;
         margin-bottom: 20px;
     }
 
-    .singUp {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
+    ul{
+        margin-bottom: 30px;
     }
 
-    .createAccount>h1 {
-        margin-top: 50px;
+    .input{
+        margin-bottom: 20px;
     }
+
+    .signUp {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .buttonSignUp{
+        margin-bottom: 20px;
+    }
+
 }
